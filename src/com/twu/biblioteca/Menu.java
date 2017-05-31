@@ -36,18 +36,20 @@ public class Menu {
     }
 
     private void checkoutBook(){
-        System.out.println("If you want to checkout a book type Y: (else, type any other key) \n ");
+        System.out.printf("If you want to checkout a book type Y (else, type any other key): \n ");
         String checkOut = keyboard.next().toLowerCase();
-        if(checkOut == "y"){
+        if(checkOut.equals("y")){
             System.out.print("Type the book number: ");
             int bookNumber = keyboard.nextInt();
             biblioteca.checkoutBook(bookNumber);
+            System.out.println("Thank you, enjoy the book!!");
         }
     }
 
     private void printBooksList(ArrayList<Book> books){
+        int i = 1;
         for (Book book: books) {
-            System.out.printf("%-15s %-15s %-10s\n", book.getTitle(), book.getAuthor(), book.getYearPublished());
+            System.out.printf(i++ + ". %-15s %-15s %-10s\n", book.getTitle(), book.getAuthor(), book.getYearPublished());
         };
     }
 
