@@ -7,9 +7,8 @@ public class Output {
         return "Hello... Welcome to Biblioteca system!";
     }
 
-
-    public void showMenuOptions() {
-        System.out.println("OPTION MENU: Choose [1] - List Books [0] - Quit");
+    public String showMenuOptions() {
+        return "OPTION MENU: \n[1] - List Books \n[0] - Quit";
     }
 
 }
