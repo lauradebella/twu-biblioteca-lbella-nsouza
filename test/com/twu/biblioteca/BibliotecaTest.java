@@ -30,7 +30,19 @@ public class BibliotecaTest {
         assertThat(biblioteca.allUnavailableBooks().size(), is(1));
     }
 
+    @Test
+    public void shouldRemoveOneBookFromAvaliableBooks(){
+        int initialBooks = biblioteca.allAvailableBooks().size();
+        biblioteca.checkoutBook(0);
+        assertThat(biblioteca.allAvailableBooks().size(), is(initialBooks - 1));
+    }
 
+    @Test
+    public void shouldRemoveOneBookFormUnavailableBooks(){
+        int initialBooks = biblioteca.allUnavailableBooks().size();
+        biblioteca.returnBook(0);
+        assertThat(biblioteca.allUnavailableBooks().size(), is(initialBooks - 1));
+    }
 
 
 }

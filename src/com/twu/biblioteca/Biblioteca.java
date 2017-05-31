@@ -41,4 +41,12 @@ public class Biblioteca {
         }
         return allUnavailableBooks;
     }
+
+    public void checkoutBook(int i) {
+        this.allAvailableBooks().get(i).changeStatus();
+    }
+
+    public void returnBook(int i) {
+        this.allUnavailableBooks().get(i).changeStatus();
+    }
 }
