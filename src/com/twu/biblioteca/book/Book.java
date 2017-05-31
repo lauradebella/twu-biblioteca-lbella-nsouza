@@ -24,4 +24,7 @@ public class Book {
     }
 
 
+    public void changeStatus() {
+        this.available = !this.available;
+    }
 }
