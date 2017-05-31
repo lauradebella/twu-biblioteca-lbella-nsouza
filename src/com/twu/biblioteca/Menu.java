@@ -13,11 +13,16 @@ public class Menu {
     private Scanner keyboard = new Scanner(System.in);
     Biblioteca biblioteca = new Biblioteca();
 
+    public void welcomeMessage(){
+        output.showWelcomeMessage();
+        System.out.println();
+    }
+
     public void menuLoop(){
 
         while(true){
-            System.out.println(output.showMenuOptions());
-            System.out.print(output.showEnterOptionMessage());
+            output.showMenuOptions();
+            output.showEnterOptionMessage();
             int option = keyboard.nextInt();
             this.controlOptions(option);
         }
@@ -26,7 +31,7 @@ public class Menu {
     public void controlOptions(int option){
         switch (option){
             case 1: {
-                System.out.println(output.showAllBookMessage());
+                output.showAllBookMessage();
                 printBooksList(biblioteca.allAvailableBooks());
                 this.checkoutBook();
                 break;
@@ -34,27 +39,27 @@ public class Menu {
             }
 
             case 2: {
-                System.out.println();
+                ;
                 printBooksList(biblioteca.allUnavailableBooks());
                 this.returnBook();
                 break;
             }
 
             case 0: {
-                System.out.println(output.showThankYouForVisitMessage());
+                output.showThankYouForVisitMessage();
                 System.exit(0);
             }
         }
     }
 
     private void returnBook() {
-        System.out.println(output.showWantReturnABookMessage());
+        output.showWantReturnABookMessage();
         int returnNumber = keyboard.nextInt();
         if(returnNumber < biblioteca.allUnavailableBooks().size()){
             biblioteca.returnBook(returnNumber);
-            System.out.println(output.showReturnBookSuccessMessage());
+            output.showReturnBookSuccessMessage();
         } else {
-            System.out.println(output.showInvalidBookReturnMessage());
+            output.showInvalidBookReturnMessage();
             returnBook();
         }
 
@@ -63,16 +68,16 @@ public class Menu {
 
 
     private void checkoutBook(){
-        System.out.printf(output.showWantCheckoutBookMessage());
+        output.showWantCheckoutBookMessage();
         String checkOut = keyboard.next().toLowerCase();
         if(YES.equals(checkOut)){
-            System.out.print(output.showTypeCheckoutBookNumberMessage());
+            output.showTypeCheckoutBookNumberMessage();
             int bookNumber = keyboard.nextInt();
             if (bookNumber < biblioteca.allAvailableBooks().size()){
                 biblioteca.checkoutBook(bookNumber);
-                System.out.println(output.showCheckoutNumberSuccessMessage());
+                output.showCheckoutNumberSuccessMessage();
             } else {
-                System.out.println(output.showInvalidCheckoutBookMessage());
+                output.showInvalidCheckoutBookMessage();
                 checkoutBook();
             }
         }

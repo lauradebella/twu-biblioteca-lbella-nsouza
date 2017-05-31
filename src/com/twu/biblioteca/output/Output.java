@@ -2,52 +2,51 @@ package com.twu.biblioteca.output;
 
 public class Output {
 
-    public String showWelcomeMessage() {
-
-        return "Hello... Welcome to Biblioteca system!";
+    public void showWelcomeMessage() {
+        System.out.println("Hello... Welcome to Biblioteca system!");
     }
 
-    public String showMenuOptions() {
-        return "OPTION MENU: \n[1] - List Books \n[2] - Return Book \n[0] - Quit";
+    public void showMenuOptions() {
+        System.out.println("\nOPTION MENU: \n[1] - List Books \n[2] - Return Book \n[0] - Quit");
     }
 
-    public String showEnterOptionMessage() {
-        return  "Enter your option: ";
+    public void showEnterOptionMessage() {
+        System.out.println( "Enter your option: ");
     }
 
-    public String showAllBookMessage() {
-        return "\nSee all books we have here !!";
+    public void showAllBookMessage() {
+        System.out.println("\nSee all books we have here !!");
     }
 
-    public String showThankYouForVisitMessage() {
-        return "\nThank you for visiting you library!!";
+    public void showThankYouForVisitMessage() {
+        System.out.println("\nThank you for visiting you library!!");
     }
 
-    public String showWantReturnABookMessage() {
-        return "Type the book number you want to return: ";
+    public void showWantReturnABookMessage() {
+        System.out.println("Type the book number you want to return: ");
     }
 
-    public String showReturnBookSuccessMessage() {
-        return "Thank you for returning the book.";
+    public void showReturnBookSuccessMessage() {
+        System.out.println("Thank you for returning the book.");
     }
 
-    public String showInvalidBookReturnMessage() {
-        return "That is not a valid book to return.";
+    public void showInvalidBookReturnMessage() {
+        System.out.println("That is not a valid book to return.");
     }
 
-    public String showWantCheckoutBookMessage() {
-        return "If you want to checkout a book type YES (else, type any other key): \n ";
+    public void showWantCheckoutBookMessage() {
+        System.out.printf("\nIf you want to checkout a book type Y (else, type any other key to back to main menu):");
     }
 
-    public String showTypeCheckoutBookNumberMessage() {
-        return "Type a book number do you want to checkout: ";
+    public void showTypeCheckoutBookNumberMessage() {
+        System.out.println("Type a book number do you want to checkout: ");
     }
 
-    public String showCheckoutNumberSuccessMessage() {
-        return "Thank you, enjoy the book!!";
+    public void showCheckoutNumberSuccessMessage() {
+        System.out.println("Thank you, enjoy the book!!");
     }
 
-    public String showInvalidCheckoutBookMessage() {
-        return "That book is not available. Try again!";
+    public void showInvalidCheckoutBookMessage() {
+        System.out.println("That book is not available. Try again!");
     }
 }
