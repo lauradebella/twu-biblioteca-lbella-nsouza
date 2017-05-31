@@ -25,4 +25,10 @@ public class BibliotecaTest {
         assertThat(biblioteca.allAvailableBooks().size(), is(2));
     }
 
+    @Test
+    public void shouldCreateAListOfUnavailableBooks(){
+        assertThat(biblioteca.allUnavailableBooks().size(), is(1));
+    }
+
+
 }

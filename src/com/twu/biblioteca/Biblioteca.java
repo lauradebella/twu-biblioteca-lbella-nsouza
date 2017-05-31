@@ -27,13 +27,18 @@ public class Biblioteca {
         return allAvailableBooks;
     }
 
-
-
-
-
-
-
     public ArrayList<Book> getAllBooks() {
         return allBooks;
+    }
+
+    public ArrayList<Book> allUnavailableBooks() {
+        ArrayList<Book> allUnavailableBooks = new ArrayList<>();
+
+        for(Book book : allBooks){
+            if(!book.isAvailable()){
+                allUnavailableBooks.add(book);
+            }
+        }
+        return allUnavailableBooks;
     }
 }
