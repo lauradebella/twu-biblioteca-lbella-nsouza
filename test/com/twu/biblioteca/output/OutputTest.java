@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class OutputTest {
 
@@ -16,8 +17,7 @@ public class OutputTest {
 
     @Test
     public void shouldShowWelcomeMessage(){
-//
-//        assertThat(output.showWelcomeMessage(), is("Welcome to Biblioteca system."));
+        assertThat(output.showWelcomeMessage(), is("Hello... Welcome to Biblioteca system!"));
 
     }
 
