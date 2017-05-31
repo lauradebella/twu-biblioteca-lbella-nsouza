@@ -43,12 +43,12 @@ public class Biblioteca {
         return allUnavailableBooks;
     }
 
-    public void checkoutBook(int i) {
-        this.allAvailableBooks().get(i).changeStatus();
+    public void checkoutBook(int bookPosition) {
+        this.allAvailableBooks().get(bookPosition).changeStatus();
     }
 
-    public void returnBook(int i) {
-        this.allUnavailableBooks().get(i).changeStatus();
+    public void returnBook(int bookPosition) {
+        this.allUnavailableBooks().get(bookPosition).changeStatus();
     }
 
 
