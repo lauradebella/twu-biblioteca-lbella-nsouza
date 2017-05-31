@@ -17,10 +17,12 @@ public class Menu {
 
     public void menuLoop(){
 
-        System.out.println(output.showMenuOptions());
-        System.out.print("Enter your option: ");
-        int option = keyboard.nextInt();
-        this.controlOptions(option);
+        while(true){
+            System.out.println(output.showMenuOptions());
+            System.out.print("Enter your option: ");
+            int option = keyboard.nextInt();
+            this.controlOptions(option);
+        }
     }
 
     public void controlOptions(int option){
@@ -41,7 +43,7 @@ public class Menu {
             }
 
             case 0: {
-                System.out.println("Thank you for visiting you library!!");
+                System.out.println("\nThank you for visiting you library!!");
                 System.exit(0);
             }
         }
