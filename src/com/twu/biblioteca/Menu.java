@@ -32,7 +32,27 @@ public class Menu {
                 break;
 
             }
+
+            case 2: {
+                System.out.println();
+                printBooksList(biblioteca.allUnavailableBooks());
+                this.returnBook();
+                break;
+            }
         }
+    }
+
+    private void returnBook() {
+        System.out.println("Type the book number you want to return: ");
+        int returnNumber = keyboard.nextInt();
+        if(returnNumber < biblioteca.allUnavailableBooks().size()){
+            biblioteca.returnBook(returnNumber);
+            System.out.println("Thank you for returning the book.");
+        } else {
+            System.out.println("That is not a valid book to return.");
+            returnBook();
+        }
+
     }
 
     private void checkoutBook(){
@@ -52,7 +72,7 @@ public class Menu {
     }
 
     private void printBooksList(ArrayList<Book> books){
-        int i = 1;
+        int i = 0;
         for (Book book: books) {
             System.out.printf(i++ + ". %-15s %-15s %-10s\n", book.getTitle(), book.getAuthor(), book.getYearPublished());
         };
