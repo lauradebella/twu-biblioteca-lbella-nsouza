@@ -8,7 +8,7 @@ public class Output {
     }
 
     public String showMenuOptions() {
-        return "OPTION MENU: \n[1] - List Books \n[0] - Quit";
+        return "OPTION MENU: \n[1] - List Books \n[2] - Return Book \n[0] - Quit";
     }
 
 }

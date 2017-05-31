@@ -23,7 +23,7 @@ public class OutputTest {
 
     @Test
     public void shouldReturnMenuMessage(){
-        assertThat(output.showMenuOptions(), is("OPTION MENU: \n[1] - List Books \n[0] - Quit"));
+        assertThat(output.showMenuOptions(), is("OPTION MENU: \n[1] - List Books \n[2] - Return Book \n[0] - Quit"));
     }
 
 }
