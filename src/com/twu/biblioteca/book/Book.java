@@ -3,6 +3,18 @@ package com.twu.biblioteca.book;
 public class Book {
 
 
+    public String getAuthor() {
+        return author;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public Integer getYearPublished() {
+        return yearPublished;
+    }
+
     private final String author;
     private final String title;
     private final Integer yearPublished;
