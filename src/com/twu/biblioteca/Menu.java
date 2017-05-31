@@ -28,18 +28,20 @@ public class Menu {
             case 1: {
                 System.out.println("\nSee all books we have here !!");
                 printBooksList(biblioteca.allAvailableBooks());
-                System.out.println("Do you want to check out one ? (Y/N) \n ");
-                String checkOut = keyboard.next();
-                if(checkOut == "Y" || checkOut == "y"){
-                    System.out.print("Type the book number: ");
-                    int bookNumber = keyboard.nextInt();
-                    biblioteca.checkoutBook(bookNumber);
-                }else if (checkOut != "N" || checkOut != "n"){
-                    System.out.println("Choose a valid option!");
-                }
+                this.checkoutBook();
                 break;
 
             }
+        }
+    }
+
+    private void checkoutBook(){
+        System.out.println("If you want to checkout a book type Y: (else, type any other key) \n ");
+        String checkOut = keyboard.next().toLowerCase();
+        if(checkOut == "y"){
+            System.out.print("Type the book number: ");
+            int bookNumber = keyboard.nextInt();
+            biblioteca.checkoutBook(bookNumber);
         }
     }
 
