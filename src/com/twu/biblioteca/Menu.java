@@ -39,6 +39,11 @@ public class Menu {
                 this.returnBook();
                 break;
             }
+
+            case 0: {
+                System.out.println("Thank you for visiting you library!!");
+                System.exit(0);
+            }
         }
     }
 
