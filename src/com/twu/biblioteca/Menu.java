@@ -6,11 +6,9 @@ import com.twu.biblioteca.output.Output;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/**
- * Created by lbella on 31/05/17.
- */
 public class Menu {
 
+    public static final String YES = "y";
     private Output output = new Output();
     private Scanner keyboard = new Scanner(System.in);
     Biblioteca biblioteca = new Biblioteca();
@@ -19,7 +17,7 @@ public class Menu {
 
         while(true){
             System.out.println(output.showMenuOptions());
-            System.out.print("Enter your option: ");
+            System.out.print(output.showEnterOptionMessage());
             int option = keyboard.nextInt();
             this.controlOptions(option);
         }
@@ -28,7 +26,7 @@ public class Menu {
     public void controlOptions(int option){
         switch (option){
             case 1: {
-                System.out.println("\nSee all books we have here !!");
+                System.out.println(output.showAllBookMessage());
                 printBooksList(biblioteca.allAvailableBooks());
                 this.checkoutBook();
                 break;
@@ -43,36 +41,38 @@ public class Menu {
             }
 
             case 0: {
-                System.out.println("\nThank you for visiting you library!!");
+                System.out.println(output.showThankYouForVisitMessage());
                 System.exit(0);
             }
         }
     }
 
     private void returnBook() {
-        System.out.println("Type the book number you want to return: ");
+        System.out.println(output.showWantReturnABookMessage());
         int returnNumber = keyboard.nextInt();
         if(returnNumber < biblioteca.allUnavailableBooks().size()){
             biblioteca.returnBook(returnNumber);
-            System.out.println("Thank you for returning the book.");
+            System.out.println(output.showReturnBookSuccessMessage());
         } else {
-            System.out.println("That is not a valid book to return.");
+            System.out.println(output.showInvalidBookReturnMessage());
             returnBook();
         }
 
     }
 
+
+
     private void checkoutBook(){
-        System.out.printf("If you want to checkout a book type Y (else, type any other key): \n ");
+        System.out.printf(output.showWantCheckoutBookMessage());
         String checkOut = keyboard.next().toLowerCase();
-        if(checkOut.equals("y")){
-            System.out.print("Type the book number: ");
+        if(YES.equals(checkOut)){
+            System.out.print(output.showTypeCheckoutBookNumberMessage());
             int bookNumber = keyboard.nextInt();
             if (bookNumber < biblioteca.allAvailableBooks().size()){
                 biblioteca.checkoutBook(bookNumber);
-                System.out.println("Thank you, enjoy the book!!");
+                System.out.println(output.showCheckoutNumberSuccessMessage());
             } else {
-                System.out.println("That book is not available. Try again!");
+                System.out.println(output.showInvalidCheckoutBookMessage());
                 checkoutBook();
             }
         }
