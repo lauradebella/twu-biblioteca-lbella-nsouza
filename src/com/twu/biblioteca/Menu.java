@@ -41,8 +41,13 @@ public class Menu {
         if(checkOut.equals("y")){
             System.out.print("Type the book number: ");
             int bookNumber = keyboard.nextInt();
-            biblioteca.checkoutBook(bookNumber);
-            System.out.println("Thank you, enjoy the book!!");
+            if (bookNumber < biblioteca.allAvailableBooks().size()){
+                biblioteca.checkoutBook(bookNumber);
+                System.out.println("Thank you, enjoy the book!!");
+            } else {
+                System.out.println("That book is not available. Try again!");
+                checkoutBook();
+            }
         }
     }
 
