@@ -46,8 +46,8 @@ public class Output {
         return "Thank you, enjoy the book!!";
     }
 
-    public void showInvalidCheckoutBookMessage() {
-        System.out.println("That book is not available. Try again!");
+    public String showInvalidCheckoutBookMessage() {
+        return "That book is not available. Try again!";
     }
 
     public String showInvalidMenuOptionMessage() {

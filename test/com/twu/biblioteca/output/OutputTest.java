@@ -27,7 +27,13 @@ public class OutputTest {
     }
 
     @Test
-    public void shouldReturnCheckoutSuccessMessage(){
+    public void shouldReturnCheckoutBookSuccessMessage(){
         assertThat(output.showCheckoutBookSuccessMessage(), is("Thank you, enjoy the book!!"));
     }
+
+    @Test
+    public void shouldReturnCheckoutBookInvalidMessage(){
+        assertThat(output.showInvalidCheckoutBookMessage(), is("That book is not available. Try again!"));
+    }
+
 }

@@ -82,8 +82,8 @@
       <file leaf-file-name="Menu.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="85" column="13" lean-forward="true" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+            <state relative-caret-position="336">
+              <caret line="83" column="76" lean-forward="true" selection-start-line="83" selection-start-column="76" selection-end-line="83" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,13 +94,15 @@
       <file leaf-file-name="Output.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/output/Output.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="45" column="45" lean-forward="true" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
+            <state relative-caret-position="366">
+              <caret line="49" column="55" lean-forward="false" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="55" />
               <folding>
                 <element signature="e#1373#1374#0" expanded="true" />
                 <element signature="e#1425#1426#0" expanded="true" />
-                <element signature="e#1605#1606#0" expanded="true" />
-                <element signature="e#1652#1653#0" expanded="true" />
+                <element signature="e#1479#1480#0" expanded="true" />
+                <element signature="e#1542#1543#0" expanded="true" />
+                <element signature="e#1594#1595#0" expanded="true" />
+                <element signature="e#1641#1642#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,8 +111,8 @@
       <file leaf-file-name="OutputTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/output/OutputTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="29" column="53" lean-forward="true" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
+            <state relative-caret-position="319">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,6 +137,7 @@
       <find>welcom</find>
       <find>we</find>
       <find>showCheckoutNumberSuccessMessage</find>
+      <find>showinv</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -162,9 +165,9 @@
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/book/Book.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/book/BookTest.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/output/Output.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/output/OutputTest.java" />
-        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/output/Output.java" />
       </list>
     </option>
   </component>
@@ -735,14 +738,14 @@
     <history-entry file="OutputTest - 2017.06.01 at 14h 21m 09s.xml">
       <configuration name="OutputTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="OutputTest - 2017.06.01 at 14h 23m 41s.xml">
+      <configuration name="OutputTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OutputTest - 2017.06.01 at 14h 23m 50s.xml">
+      <configuration name="OutputTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="OutputTest_shouldReturnInvalidOptionMessage - 2017.06.01 at 14h 20m 49s.xml">
       <configuration name="OutputTest.shouldReturnInvalidOptionMessage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OutputTest_shouldReturnMenuMessage - 2017.05.31 at 15h 07m 19s.xml">
-      <configuration name="OutputTest.shouldReturnMenuMessage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OutputTest_shouldReturnMenuMessage - 2017.05.31 at 15h 14m 33s.xml">
-      <configuration name="OutputTest.shouldReturnMenuMessage" configurationId="JUnit" />
     </history-entry>
     <history-entry file="OutputTest_shouldReturnWelcomeMessage - 2017.06.01 at 14h 01m 03s.xml">
       <configuration name="OutputTest.shouldReturnWelcomeMessage" configurationId="JUnit" />
@@ -904,8 +907,10 @@
           <folding>
             <element signature="e#1373#1374#0" expanded="true" />
             <element signature="e#1425#1426#0" expanded="true" />
-            <element signature="e#1605#1606#0" expanded="true" />
-            <element signature="e#1652#1653#0" expanded="true" />
+            <element signature="e#1479#1480#0" expanded="true" />
+            <element signature="e#1542#1543#0" expanded="true" />
+            <element signature="e#1594#1595#0" expanded="true" />
+            <element signature="e#1641#1642#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -974,8 +979,10 @@
           <folding>
             <element signature="e#1373#1374#0" expanded="true" />
             <element signature="e#1425#1426#0" expanded="true" />
-            <element signature="e#1605#1606#0" expanded="true" />
-            <element signature="e#1652#1653#0" expanded="true" />
+            <element signature="e#1479#1480#0" expanded="true" />
+            <element signature="e#1542#1543#0" expanded="true" />
+            <element signature="e#1594#1595#0" expanded="true" />
+            <element signature="e#1641#1642#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1042,8 +1049,10 @@
           <folding>
             <element signature="e#1373#1374#0" expanded="true" />
             <element signature="e#1425#1426#0" expanded="true" />
-            <element signature="e#1605#1606#0" expanded="true" />
-            <element signature="e#1652#1653#0" expanded="true" />
+            <element signature="e#1479#1480#0" expanded="true" />
+            <element signature="e#1542#1543#0" expanded="true" />
+            <element signature="e#1594#1595#0" expanded="true" />
+            <element signature="e#1641#1642#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1107,8 +1116,10 @@
           <folding>
             <element signature="e#1373#1374#0" expanded="true" />
             <element signature="e#1425#1426#0" expanded="true" />
-            <element signature="e#1605#1606#0" expanded="true" />
-            <element signature="e#1652#1653#0" expanded="true" />
+            <element signature="e#1479#1480#0" expanded="true" />
+            <element signature="e#1542#1543#0" expanded="true" />
+            <element signature="e#1594#1595#0" expanded="true" />
+            <element signature="e#1641#1642#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1168,8 +1179,10 @@
           <folding>
             <element signature="e#1373#1374#0" expanded="true" />
             <element signature="e#1425#1426#0" expanded="true" />
-            <element signature="e#1605#1606#0" expanded="true" />
-            <element signature="e#1652#1653#0" expanded="true" />
+            <element signature="e#1479#1480#0" expanded="true" />
+            <element signature="e#1542#1543#0" expanded="true" />
+            <element signature="e#1594#1595#0" expanded="true" />
+            <element signature="e#1641#1642#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1268,8 +1281,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="85" column="13" lean-forward="true" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+        <state relative-caret-position="336">
+          <caret line="83" column="76" lean-forward="true" selection-start-line="83" selection-start-column="76" selection-end-line="83" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1278,21 +1291,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/output/Output.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="45" column="45" lean-forward="true" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
+        <state relative-caret-position="366">
+          <caret line="49" column="55" lean-forward="false" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="55" />
           <folding>
             <element signature="e#1373#1374#0" expanded="true" />
             <element signature="e#1425#1426#0" expanded="true" />
-            <element signature="e#1605#1606#0" expanded="true" />
-            <element signature="e#1652#1653#0" expanded="true" />
+            <element signature="e#1479#1480#0" expanded="true" />
+            <element signature="e#1542#1543#0" expanded="true" />
+            <element signature="e#1594#1595#0" expanded="true" />
+            <element signature="e#1641#1642#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/output/OutputTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="29" column="53" lean-forward="true" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
+        <state relative-caret-position="319">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

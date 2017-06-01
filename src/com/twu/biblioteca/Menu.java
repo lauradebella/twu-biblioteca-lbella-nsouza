@@ -81,7 +81,7 @@ public class Menu {
                 biblioteca.checkoutBook(bookNumber);
                 System.out.println(output.showCheckoutBookSuccessMessage());
             } else {
-                output.showInvalidCheckoutBookMessage();
+                System.out.println(output.showInvalidCheckoutBookMessage());
                 checkoutBook();
             }
         }
