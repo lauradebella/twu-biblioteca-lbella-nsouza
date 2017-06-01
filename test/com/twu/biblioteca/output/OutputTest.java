@@ -25,4 +25,9 @@ public class OutputTest {
     public void shouldReturnInvalidOptionMessage(){
         assertThat(output.showInvalidMenuOptionMessage(), is("Select a valid option!"));
     }
+
+    @Test
+    public void shouldReturnCheckoutSuccessMessage(){
+        assertThat(output.showCheckoutBookSuccessMessage(), is("Thank you, enjoy the book!!"));
+    }
 }

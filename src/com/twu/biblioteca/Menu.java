@@ -79,7 +79,7 @@ public class Menu {
             int bookNumber = keyboard.nextInt();
             if (bookNumber < biblioteca.allAvailableBooks().size()){
                 biblioteca.checkoutBook(bookNumber);
-                output.showCheckoutNumberSuccessMessage();
+                System.out.println(output.showCheckoutBookSuccessMessage());
             } else {
                 output.showInvalidCheckoutBookMessage();
                 checkoutBook();

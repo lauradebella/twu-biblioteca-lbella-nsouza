@@ -42,8 +42,8 @@ public class Output {
         System.out.println("Type a book number do you want to checkout: ");
     }
 
-    public void showCheckoutNumberSuccessMessage() {
-        System.out.println("Thank you, enjoy the book!!");
+    public String showCheckoutBookSuccessMessage() {
+        return "Thank you, enjoy the book!!";
     }
 
     public void showInvalidCheckoutBookMessage() {
