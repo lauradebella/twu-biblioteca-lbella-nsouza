@@ -21,4 +21,8 @@ public class OutputTest {
         assertThat(output.showWelcomeMessage(), is("Hello... Welcome to Biblioteca system!"));
     }
 
+    @Test
+    public void shouldReturnInvalidOptionMessage(){
+        assertThat(output.showInvalidMenuOptionMessage(), is("Select a valid option!"));
+    }
 }
