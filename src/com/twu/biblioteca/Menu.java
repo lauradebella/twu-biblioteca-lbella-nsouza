@@ -66,7 +66,6 @@ public class Menu {
     }
 
 
-
     private void checkoutBook(){
         output.showWantCheckoutBookMessage();
         String checkOut = keyboard.next().toLowerCase();
