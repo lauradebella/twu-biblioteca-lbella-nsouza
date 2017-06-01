@@ -7,7 +7,8 @@ public class Output {
     }
 
     public void showMenuOptions() {
-        System.out.println("\nOPTION MENU: \n[1] - List Books \n[2] - Return Book \n[0] - Quit");
+        System.out.println("\nOPTION MENU: \n[1] - List Books \n[2] - Return Book \n" +
+                "[3] - List Movies\n[0] - Quit");
     }
 
     public void showEnterOptionMessage() {

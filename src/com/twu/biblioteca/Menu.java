@@ -1,6 +1,7 @@
 package com.twu.biblioteca;
 
 import com.twu.biblioteca.book.Book;
+import com.twu.biblioteca.movie.Movie;
 import com.twu.biblioteca.output.Output;
 
 import java.util.ArrayList;
@@ -39,9 +40,14 @@ public class Menu {
             }
 
             case 2: {
-                ;
                 printBooksList(biblioteca.allUnavailableBooks());
                 this.returnBook();
+                break;
+            }
+
+            case 3: {
+                printMoviesList(biblioteca.getAllMovies());
+                this.checkoutMovie();
                 break;
             }
 
@@ -55,6 +61,16 @@ public class Menu {
                 break;
             }
         }
+    }
+
+    private void printMoviesList(ArrayList<Movie> allMovies) {
+        int index = 0;
+        for (Movie movie: allMovies) {
+            System.out.printf(index++ + ". %-15s %-15s %-10s %-10s\n", movie.getName(), movie.getYear(), movie.getDirector(), movie.getRating());
+        };
+    }
+
+    private void checkoutMovie() {
     }
 
     private void returnBook() {
@@ -90,7 +106,7 @@ public class Menu {
     private void printBooksList(ArrayList<Book> books){
         int i = 0;
         for (Book book: books) {
-            System.out.printf(i++ + ". %-15s %-15s %-10s\n", book.getTitle(), book.getAuthor(), book.getYearPublished());
+            System.out.printf(i++ + ". %-40s %-15s %-10s\n", book.getTitle(), book.getAuthor(), book.getYearPublished());
         };
     }
 
