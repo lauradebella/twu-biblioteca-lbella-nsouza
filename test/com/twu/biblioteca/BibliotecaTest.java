@@ -49,5 +49,10 @@ public class BibliotecaTest {
         assertThat(biblioteca.getAllMovies().size(), is(3));
     }
 
+    @Test
+    public void shouldCheckoutMovie(){
+        biblioteca.checkoutMovie(0);
+        assertThat(biblioteca.getAllMovies().get(0).isAvailable(), is(false));
+    }
 
 }

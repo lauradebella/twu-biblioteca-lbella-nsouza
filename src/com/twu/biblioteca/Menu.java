@@ -66,11 +66,26 @@ public class Menu {
     private void printMoviesList(ArrayList<Movie> allMovies) {
         int index = 0;
         for (Movie movie: allMovies) {
-            System.out.printf(index++ + ". %-15s %-15s %-10s %-10s\n", movie.getName(), movie.getYear(), movie.getDirector(), movie.getRating());
+            System.out.printf(index++ + ". %-15s %-15s %-10s %-10s %-10s\n",
+                    movie.getName(), movie.getYear(), movie.getDirector(), movie.getRating(),
+                    (movie.isAvailable() ? "AVAILABLE" : "UNAVAILABLE") );
         };
     }
 
     private void checkoutMovie() {
+        output.showWantCheckoutMovieMessage();
+        String checkOut = keyboard.next().toLowerCase();
+        if(YES.equals(checkOut)){
+            output.showTypeCheckoutMovieNumberMessage();
+            int movieNumber = keyboard.nextInt();
+            if (movieNumber < biblioteca.getAllMovies().size()){
+                biblioteca.checkoutMovie(movieNumber);
+                System.out.println(output.showCheckoutMovieSuccessMessage());
+            } else {
+                System.out.println(output.showInvalidCheckoutMovieMessage());
+                checkoutMovie();
+            }
+        }
     }
 
     private void returnBook() {

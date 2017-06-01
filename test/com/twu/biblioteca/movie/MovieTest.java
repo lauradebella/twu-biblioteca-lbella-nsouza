@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.*;
 
 public class MovieTest {
@@ -36,5 +37,15 @@ public class MovieTest {
         assertThat(movie.getRating(), is (9));
     }
 
+    @Test
+    public void movieShouldHaveStatus() {
+        assertThat(movie.isAvailable(), is(true));
+    }
 
+    @Test
+    public void shouldChangeBookAvailbleStatus(){
+        assertThat(movie.isAvailable(), is(true));
+        movie.changeStatus();
+        assertThat(movie.isAvailable(), is(false));
+    }
 }

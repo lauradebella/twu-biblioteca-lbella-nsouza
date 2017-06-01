@@ -48,6 +48,7 @@ public class Biblioteca {
     }
 
     public void checkoutBook(int bookPosition) {
+
         this.allAvailableBooks().get(bookPosition).changeStatus();
     }
 
@@ -58,5 +59,9 @@ public class Biblioteca {
 
     public ArrayList<Movie> getAllMovies() {
         return allMovies;
+    }
+
+    public void checkoutMovie(int movieNumber) {
+        this.getAllMovies().get(movieNumber).changeStatus();
     }
 }

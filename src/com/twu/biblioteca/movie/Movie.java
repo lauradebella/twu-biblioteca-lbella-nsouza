@@ -5,13 +5,18 @@ public class Movie {
     private Integer year;
     private String director;
     private Integer rating;
-
+    private boolean available;
 
     public Movie(String name, Integer year, String director, Integer rating) {
         this.name = name;
         this.year = year;
         this.director = director;
         this.rating = rating;
+        this.available = true;
+    }
+
+    public boolean isAvailable() {
+        return this.available;
     }
 
     public String getName() {
@@ -28,5 +33,9 @@ public class Movie {
 
     public Integer getRating() {
         return this.rating;
+    }
+
+    public void changeStatus() {
+        this.available = !this.available;
     }
 }

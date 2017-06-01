@@ -55,4 +55,20 @@ public class Output {
     public String showInvalidMenuOptionMessage() {
         return "Select a valid option!";
     }
+
+    public void showWantCheckoutMovieMessage() {
+        System.out.printf("\nIf you want to checkout a movie type Y (else, type any other key to back to main menu):");
+    }
+
+    public void showTypeCheckoutMovieNumberMessage() {
+        System.out.println("Type a movie number do you want to checkout: ");
+    }
+
+    public String showCheckoutMovieSuccessMessage() {
+        return "Thank you, enjoy the movie!!";
+    }
+
+    public String showInvalidCheckoutMovieMessage() {
+        return "That movie is not available. Try again!";
+    }
 }
