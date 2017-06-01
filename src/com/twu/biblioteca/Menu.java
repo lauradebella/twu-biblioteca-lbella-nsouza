@@ -33,7 +33,7 @@ public class Menu {
             if (libraryNumber.equals(user.getLibraryNumber())) {
                 if (passwordNumber.equals(user.getPassword())) {
                     System.out.println(output.showLoginSuccessMessage(user.getName()));
-                    menuLoop();
+                    menuLoop(user);
                     logged = true;
                 }
             }
@@ -44,17 +44,17 @@ public class Menu {
         }
     }
 
-    private void menuLoop(){
+    private void menuLoop(User user){
 
         while(true){
             output.showMenuOptions();
             output.showEnterOptionMessage();
             int option = keyboard.nextInt();
-            this.controlOptions(option);
+            this.controlOptions(option,user);
         }
     }
 
-    private void controlOptions(int option){
+    private void controlOptions(int option, User user){
         switch (option){
             case 1: {
                 output.showAllBookMessage();
@@ -76,6 +76,11 @@ public class Menu {
                 break;
             }
 
+            case 4: {
+                printUserData(user);
+                break;
+            }
+
             case 0: {
                 output.showThankYouForVisitMessage();
                 System.exit(0);
@@ -86,6 +91,13 @@ public class Menu {
                 break;
             }
         }
+    }
+
+    private void printUserData(User user) {
+        System.out.println("\nUser name: " + user.getName() );
+        System.out.println("Email: " + user.getEmail());
+        System.out.print("Cellphone: " + user.getPhoneNumber());
+        System.out.println();
     }
 
     private void printMoviesList(ArrayList<Movie> allMovies) {
