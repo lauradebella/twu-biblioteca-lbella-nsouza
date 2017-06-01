@@ -6,9 +6,7 @@ import org.junit.Test;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
-/**
- * Created by lbella on 01/06/17.
- */
+
 public class OutputTest {
 
     private Output output;

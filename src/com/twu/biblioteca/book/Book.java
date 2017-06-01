@@ -31,11 +31,6 @@ public class Book {
         return available;
     }
 
-    public void setAvailable(boolean available) {
-        this.available = available;
-    }
-
-
     public void changeStatus() {
         this.available = !this.available;
     }

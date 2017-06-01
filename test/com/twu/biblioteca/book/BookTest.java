@@ -12,7 +12,7 @@ public class BookTest {
 
     @Before
     public void setUp() {
-        book = new Book("Prejudice and proud", "Emily Dickson", 1960, true);
+        book = new Book("Emily Dickson", "Prejudice and proud", 1960, true);
     }
 
     @Test
@@ -20,5 +20,25 @@ public class BookTest {
         assertThat(book.isAvailable(), is(true));
         book.changeStatus();
         assertThat(book.isAvailable(), is(false));
+    }
+
+    @Test
+    public void bookShouldHaveAuthor(){
+        assertThat(book.getAuthor(), is("Emily Dickson"));
+    }
+
+    @Test
+    public void bookShouldHaveTitle(){
+        assertThat(book.getTitle(), is("Prejudice and proud"));
+    }
+
+    @Test
+    public void bookShouldHaveYearPublished(){
+        assertThat(book.getYearPublished(), is(1960));
+    }
+
+    @Test
+    public void bookShouldHaveStatus(){
+        assertThat(book.isAvailable(), is(true));
     }
 }
