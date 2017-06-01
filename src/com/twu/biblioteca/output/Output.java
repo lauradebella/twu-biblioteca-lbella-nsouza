@@ -30,8 +30,9 @@ public class Output {
         return "Thank you for returning the book.";
     }
 
-    public void showInvalidBookReturnMessage() {
-        System.out.println("That is not a valid book to return.");
+    public String showInvalidBookReturnMessage() {
+        
+        return "That is not a valid book to return.";
     }
 
     public void showWantCheckoutBookMessage() {

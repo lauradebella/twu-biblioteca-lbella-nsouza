@@ -40,4 +40,10 @@ public class OutputTest {
     public void shouldReturnSuccessReturnBookMessage(){
         assertThat(output.showReturnBookSuccessMessage(), is( "Thank you for returning the book."));
     }
+
+    @Test
+    public void shouldReturnInvalidReturnBookMessage(){
+        assertThat(output.showInvalidBookReturnMessage(), is("That is not a valid book to return."));
+    }
+
 }

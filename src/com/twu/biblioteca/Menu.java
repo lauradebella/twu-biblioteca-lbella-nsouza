@@ -64,7 +64,7 @@ public class Menu {
             biblioteca.returnBook(returnNumber);
             System.out.println(output.showReturnBookSuccessMessage());
         } else {
-            output.showInvalidBookReturnMessage();
+            System.out.println(output.showInvalidBookReturnMessage());
             returnBook();
         }
 
