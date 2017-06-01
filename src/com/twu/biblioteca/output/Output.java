@@ -2,8 +2,8 @@ package com.twu.biblioteca.output;
 
 public class Output {
 
-    public void showWelcomeMessage() {
-        System.out.println("Hello... Welcome to Biblioteca system!");
+    public String showWelcomeMessage() {
+       return "Hello... Welcome to Biblioteca system!";
     }
 
     public void showMenuOptions() {

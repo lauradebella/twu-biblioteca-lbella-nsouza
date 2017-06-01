@@ -14,7 +14,7 @@ public class Menu {
     Biblioteca biblioteca = new Biblioteca();
 
     public void welcomeMessage(){
-        output.showWelcomeMessage();
+        System.out.println(output.showWelcomeMessage());
         System.out.println();
     }
 
