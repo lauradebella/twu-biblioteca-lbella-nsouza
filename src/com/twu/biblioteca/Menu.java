@@ -62,7 +62,7 @@ public class Menu {
         int returnNumber = keyboard.nextInt();
         if(returnNumber < biblioteca.allUnavailableBooks().size()){
             biblioteca.returnBook(returnNumber);
-            output.showReturnBookSuccessMessage();
+            System.out.println(output.showReturnBookSuccessMessage());
         } else {
             output.showInvalidBookReturnMessage();
             returnBook();

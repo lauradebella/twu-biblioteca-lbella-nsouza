@@ -31,14 +31,14 @@ public class BibliotecaTest {
     }
 
     @Test
-    public void shouldCheckoutBookAndUpdateAvaiableList(){
+    public void shouldCheckoutBookAndUpdateAvailableList(){
         int initialBooks = biblioteca.allAvailableBooks().size();
         biblioteca.checkoutBook(0);
         assertThat(biblioteca.allAvailableBooks().size(), is(initialBooks - 1));
     }
 
     @Test
-    public void shouldReturnBookAndUpdateUnavaiableList(){
+    public void shouldReturnBookAndUpdateUnavailableList(){
         int initialBooks = biblioteca.allUnavailableBooks().size();
         biblioteca.returnBook(0);
         assertThat(biblioteca.allUnavailableBooks().size(), is(initialBooks - 1));

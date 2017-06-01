@@ -26,8 +26,8 @@ public class Output {
         System.out.println("Type the book number you want to return: ");
     }
 
-    public void showReturnBookSuccessMessage() {
-        System.out.println("Thank you for returning the book.");
+    public String showReturnBookSuccessMessage() {
+        return "Thank you for returning the book.";
     }
 
     public void showInvalidBookReturnMessage() {

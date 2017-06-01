@@ -36,4 +36,8 @@ public class OutputTest {
         assertThat(output.showInvalidCheckoutBookMessage(), is("That book is not available. Try again!"));
     }
 
+    @Test
+    public void shouldReturnSuccessReturnBookMessage(){
+        assertThat(output.showReturnBookSuccessMessage(), is( "Thank you for returning the book."));
+    }
 }
