@@ -83,4 +83,8 @@ public class Output {
     public String showLoginSuccessMessage(String name) {
         return "Login success! Welcome " + name;
     }
+
+    public String showInvalidUserLoginMessage() {
+        return "Password or user wrong. Try again";
+    }
 }

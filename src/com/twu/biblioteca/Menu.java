@@ -39,12 +39,12 @@ public class Menu {
             }
         }
         if(!logged){
-            System.out.println("Password or user wrong. Try again");
+            System.out.println(output.showInvalidUserLoginMessage());
             loginUser();
         }
     }
 
-    public void menuLoop(){
+    private void menuLoop(){
 
         while(true){
             output.showMenuOptions();
