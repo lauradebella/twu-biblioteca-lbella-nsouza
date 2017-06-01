@@ -28,7 +28,7 @@ public class Menu {
         }
     }
 
-    public void controlOptions(int option){
+    private void controlOptions(int option){
         switch (option){
             case 1: {
                 output.showAllBookMessage();
