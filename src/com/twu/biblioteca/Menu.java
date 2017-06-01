@@ -69,7 +69,7 @@ public class Menu {
             System.out.printf(index++ + ". %-15s %-15s %-10s %-10s %-10s\n",
                     movie.getName(), movie.getYear(), movie.getDirector(), movie.getRating(),
                     (movie.isAvailable() ? "AVAILABLE" : "UNAVAILABLE") );
-        };
+        }
     }
 
     private void checkoutMovie() {
