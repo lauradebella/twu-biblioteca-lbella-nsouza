@@ -1,10 +1,8 @@
 package com.twu.biblioteca;
 
 import com.twu.biblioteca.book.Book;
-import com.twu.biblioteca.output.Output;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Biblioteca {
 
