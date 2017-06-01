@@ -71,4 +71,16 @@ public class Output {
     public String showInvalidCheckoutMovieMessage() {
         return "That movie is not available. Try again!";
     }
+
+    public String showInsertLibraryNumber() {
+        return "Please, insert your library number: ";
+    }
+
+    public String showInsertPasswordMessage() {
+        return "Please, insert your password:   ";
+    }
+
+    public String showLoginSuccessMessage(String name) {
+        return "Login success! Welcome " + name;
+    }
 }

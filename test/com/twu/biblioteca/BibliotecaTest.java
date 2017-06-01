@@ -55,4 +55,9 @@ public class BibliotecaTest {
         assertThat(biblioteca.getAllMovies().get(0).isAvailable(), is(false));
     }
 
+    @Test
+    public void shouldGetAllUsers(){
+        assertThat(biblioteca.getAllUsers().size(), is(1));
+    }
+
 }

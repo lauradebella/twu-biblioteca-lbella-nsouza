@@ -3,6 +3,7 @@ package com.twu.biblioteca;
 import com.twu.biblioteca.book.Book;
 import com.twu.biblioteca.movie.Movie;
 import com.twu.biblioteca.output.Output;
+import com.twu.biblioteca.user.User;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -17,6 +18,30 @@ public class Menu {
     public void welcomeMessage(){
         System.out.println(output.showWelcomeMessage());
         System.out.println();
+    }
+
+    public void loginUser(){
+        System.out.printf(output.showInsertLibraryNumber());
+        String libraryNumber = keyboard.next();
+        System.out.println(output.showInsertPasswordMessage());
+        String passwordNumber = keyboard.next();
+
+        boolean logged = false;
+
+        for(User user : biblioteca.getAllUsers()) {
+
+            if (libraryNumber.equals(user.getLibraryNumber())) {
+                if (passwordNumber.equals(user.getPassword())) {
+                    System.out.println(output.showLoginSuccessMessage(user.getName()));
+                    menuLoop();
+                    logged = true;
+                }
+            }
+        }
+        if(!logged){
+            System.out.println("Password or user wrong. Try again");
+            loginUser();
+        }
     }
 
     public void menuLoop(){

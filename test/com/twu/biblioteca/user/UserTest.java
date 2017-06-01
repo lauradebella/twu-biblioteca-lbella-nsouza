@@ -14,7 +14,6 @@ public class UserTest {
     public void setUp(){
         user = new User("829-1212","Laura", "laura@laura.com", "87 99898-9999",
                 "123456");
-        
     }
 
     @Test

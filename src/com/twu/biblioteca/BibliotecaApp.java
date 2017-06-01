@@ -6,7 +6,7 @@ public class BibliotecaApp {
         Menu menu = new Menu();
 
         menu.welcomeMessage();
-        menu.menuLoop();
+        menu.loginUser();
 
     }
 }
