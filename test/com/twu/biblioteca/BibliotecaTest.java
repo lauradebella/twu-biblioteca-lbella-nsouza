@@ -44,5 +44,10 @@ public class BibliotecaTest {
         assertThat(biblioteca.allUnavailableBooks().size(), is(initialBooks - 1));
     }
 
+    @Test
+    public void shouldGetAllMovies(){
+        assertThat(biblioteca.getAllMovies().size(), is(3));
+    }
+
 
 }

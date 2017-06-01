@@ -56,6 +56,7 @@ public class Biblioteca {
     }
 
 
-
-
+    public ArrayList<Movie> getAllMovies() {
+        return allMovies;
+    }
 }

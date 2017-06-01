@@ -35,4 +35,6 @@ public class MovieTest {
     public void movieShouldHaveARating(){
         assertThat(movie.getRating(), is (9));
     }
+
+
 }
