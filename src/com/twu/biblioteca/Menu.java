@@ -26,6 +26,10 @@ public class Menu {
         System.out.println(output.showInsertPasswordMessage());
         String passwordNumber = keyboard.next();
 
+        checkValidUser(libraryNumber, passwordNumber);
+    }
+
+    private void checkValidUser(String libraryNumber, String passwordNumber) {
         boolean logged = false;
 
         for(User user : biblioteca.getAllUsers()) {
